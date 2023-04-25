@@ -56,6 +56,7 @@ os.system('cp *.itp ../{dir}'.format(dir=dir))
 os.system('cp *.mdp ../{dir}'.format(dir=dir))
 os.system('rm ../{dir}/mdout.mdp'.format(dir=dir))
 os.system('cp plumed.dat ../{dir}'.format(dir=dir))
+os.system('cp HILLS ../{dir}'.format(dir=dir))
 
 
 # runit.sh script for plumed Gromacs
