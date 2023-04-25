@@ -1,7 +1,7 @@
 """
 Script for making my life on metacenter easier.
 origin usage for AF2DISTPROB, protein interactions
-The starting fire has to have "_" at the end
+The starting fire has to have "_number" at the end
 can be used to start first mtd simulation with plumed
 
 Parameters
@@ -83,4 +83,6 @@ echo "cp -r * $MYDIR/ || {c}" >> $RUN_FILE\n\
 \n\
 qsub $RUN_FILE'.format(c = c, pref_b = pref_b, pref_a = pref_a, suf_a = suf_a, suf_b = suf_b))
 
+os.system('chmod u+x ../{dir}/runit.sh'.format(dir=dir))
+#os.system(../{dir}/runit.sh'.format(dir=dir))
 os.system('cp runit_casc.py ../{dir}'.format(dir=dir))
